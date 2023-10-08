@@ -1,7 +1,7 @@
 {
-  "name": "eren-portfolyo",
+  "name": "astro-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -24,6 +24,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@vanilla-extract/css": "^1.13.0",
+    "@vanilla-extract/vite-plugin": "^3.9.0",
     "postcss": "^8.4.31",
     "postcss-preset-mantine": "^1.8.0",
     "postcss-simple-vars": "^7.0.1"
