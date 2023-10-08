@@ -1,6 +1,8 @@
 ---
 import '@mantine/core/styles.css';
+
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+
 import { theme } from '../styles/theme';
 
 interface Props {
@@ -24,7 +26,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} client:load>
 		  <slot />
     </MantineProvider>
   </body>

@@ -1,9 +1,9 @@
 // Demo.css.ts
-import { vars } from './theme';
+import { vanilla, theme } from './theme';
 import { style } from '@vanilla-extract/css';
 
 export const demo = style({
-  fontSize: vars.fontSizes.xl,
-  backgroundColor: vars.colors.red[5],
-  color: vars.colors.white,
+  fontSize: vanilla.fontSizes.xl,
+  backgroundColor: vanilla.colors.red[5],
+  color: vanilla.colors.white,
 });
