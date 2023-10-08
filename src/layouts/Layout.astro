@@ -1,5 +1,7 @@
 ---
 import '@mantine/core/styles.css';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { theme } from '../styles/theme';
 
 interface Props {
 	title: string;
@@ -12,15 +14,20 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+    <ColorSchemeScript />
+
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
-	</body>
+    <MantineProvider theme={theme}>
+		  <slot />
+    </MantineProvider>
+  </body>
 </html>
 
 <style is:global>
